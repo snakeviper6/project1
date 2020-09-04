@@ -465,3 +465,8 @@ display:inline-block;
     font-weight:600
   }
 }
+#map{
+border:1px solid black;	
+background-color:white;
+	
+}
