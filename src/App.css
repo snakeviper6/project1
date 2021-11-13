@@ -14,16 +14,53 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /*background-color: #282c34;*/
+  background-color:white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border:1px solid black;
+  justify-content:center ;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  row-gap: 20px;
 }
+.top{
 
+  min-height:5vh;
+}
+.footer{
+  min-height:5vh;
+  color:black;
+}
+.main {
+  /*background-color: #282c34;*/
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  border:1px solid black;
+  justify-content:center ;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  row-gap: 20px;
+}
+.row1{
+  min-height:100vh;
+  border:1px solid red;
+  width:15%;
+}
+.mrow{
+  min-height:100vh;
+  border:1px solid red;
+  width:60%;
+}
+.row3{
+  min-height:100vh;
+  border:1px solid red;
+  width:15%;
+
+}
 .App-link {
   color: #61dafb;
 }
