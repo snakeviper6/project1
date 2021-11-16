@@ -1,34 +1,22 @@
 import React, { Component } from 'react'
-import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table';
+import { Card, CardHeader, CardBody, CardFooter ,ImageHeader} from 'react-simple-card';
 export default class Prices extends Component {
     render() {
         return (
-            <div>
-                <PricingTable  highlightColor='#1976D2'>
-                <PricingSlot  onClick={this.submit} buttonText='TRY IT FREE' title='Horaire de travail' priceText='Internet'>
-                <PricingDetail> <b>Lundi</b>  8:00-12:00</PricingDetail>
-                <PricingDetail> <b>Mardi</b  >8:00-12:00</PricingDetail>
-                <PricingDetail> <b>mercredi</b>  8:00-12:00</PricingDetail>
-                <PricingDetail> <b>Jeudi</b>  8:00-12:00</PricingDetail>
-                <PricingDetail> <b>Vendredi</b>  8:00-12:00</PricingDetail>
-                <PricingDetail> <b>Week end</b>  FERMÉ</PricingDetail>
-                
-                
-                
+            <div className="sidesC">
+                <div className="some">
+               <Card>
+        <CardHeader className="cardheader">Horaire de travail</CardHeader>
+        <CardBody className="cardbody" >
+            <p><b>Lundi a jeudi</b><br /> 8H-14h </p><br />
+        <p><b> Vendredi</b> <br /> 8H-12H </p><br />
+        <p><b> WEEK-END</b> <br /> FERME </p><br />
+        
+        </CardBody>
+        
+    </Card>
+    </div>
    
-      </PricingSlot>
-</PricingTable>
-
-<PricingTable  highlightColor='#1976D2'>
-                <PricingSlot  onClick={this.submit} buttonText='TRY IT FREE' title='TARIFF' priceText='Impression'>
-                <PricingDetail> <b></b> 5DH</PricingDetail>
-                <PricingDetail> <b>1 Heure</b> 10DH </PricingDetail>
-                
-                <PricingDetail> <b>2 Heures</b> 15DH</PricingDetail>
-                
-   
-      </PricingSlot>
-</PricingTable>
             </div>
         )
     }
