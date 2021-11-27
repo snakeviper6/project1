@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   min-width:500px;
+ /* transform: scale(0.7);
+  transform-origin: 0 0;*/
+  
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -16,37 +20,69 @@
 
 .App-header {
   /*background-color: #282c34;*/
-  background-color:white;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  border:1px solid black;
+  border:1px solid pink;
   justify-content:center ;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: white;
   row-gap: 20px;
   min-width:500px;
+  background-color: #708090;
+  
 }
 .top{
 
   min-height:5vh;
+  height:15vh;
+
   display:flex;
   flex-direction:row;
   min-width:100%;
 justify-content: space-between;
 
 }
+.navC{
+  display:flex;
+  flex-direction:row-reverse;
+font-size:1.4vw;
+  height:4vh;
+  border:3px solid pink;
+  color:white;
+}
 .top-left{
   flex:1;
   border:2px solid red;
+  color:white;
+  background-color: #708090;
+  font-family: 'Bayon', sans-serif;
+  font-size:2vw;
+  color:white;
+  display:flex;
+
+}
+.top-left-left{
+flex:1;
+display:flex;
+justify-content: center;
+border:1px solid red;
+}
+.top-left-right{
+  display:flex;
+justify-content: center;
+
+  flex:2;
 }
 .top-right{
   flex:1;
   border:2px solid yellow;
+  background-color: #708090;
 }
 .maintop{
   
-
+ 
    height:100%;
     display:flex;
   flex-direction:row;
@@ -56,7 +92,7 @@ justify-content: space-between;
     flex-direction:row;
   justify-content: space-between;
   
-  
+  background-color: #708090;
 }
 
 .clock{
@@ -67,19 +103,22 @@ justify-content: space-between;
 }
 .footer{
   min-height:5vh;
+  
   color:black;
 }
 .main {
   /*background-color: #282c34;*/
   background-color:white;
-  min-height: 100vh;
+  min-height: 70vh;
+ 
   display: flex;
   flex-direction: row;
   border:1px solid black;
-  justify-content:center ;
+  justify-content:space-between ;
   font-size: calc(10px + 2vmin);
   color: black;
   row-gap: 20px;
+  background-color: #708090;
 }
 .row1{
   min-height:100vh;
@@ -88,6 +127,8 @@ justify-content: space-between;
   display:flex;
   flex-direction:row;
   justify-content:center;
+  background-color: #708090;
+  
 }
 .mrow{
   min-height:100vh;
@@ -128,6 +169,10 @@ padding-top:21px
   display:flex;
   flex-direction:row;
   justify-content:center;
+ /* transform: scale(0.7);
+  transform-origin: 0 0;*/
+  justify-self:center;
+  background-color: #708090;
 
 }
 .App-link {
@@ -156,7 +201,7 @@ border:1px solid green;
   flex-direction: column;
   justify-content: space-between;
   width:inherit;
-  background-color:gray;
+  background-color: #708090;
   width:100%;
 row-gap:25vh;
 }
@@ -164,14 +209,19 @@ row-gap:25vh;
   color:red;
   justify-self:top;
   height:40vh;
+  background-color: #708090;
 }
 .cardbody{
   font-size:1.1vw;
   display:flex;
   flex-direction:column;
+  background-color: #708090;
 }
 .cardheader{
-  font-size:1.2vw;
+  font-size:2vw;
+  background-color: #708090;
+  font-family: 'Bayon', sans-serif;
+  color:white;
 }
 .Grid{
   width:auto;
@@ -197,15 +247,392 @@ min-width:auto;
   width:6vw;
   height:100%;
   row-gap:1vw;
- 
+ border:2px solid black;
   display:flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap:wrap ;
- 
-}
-.kingimg{
-  width:7vw;
-  height:17vh;
+  background-color: #708090;
   
  
+}
+.imgH{
+  background-color: #708090;
+ 
+  
+}
+.kingimg{
+  width:6vw;
+  height:auto;
+  
+ 
+}
+.logoimg{
+width:12vw;
+height:100%;
+
+}
+
+.imglogodiv{
+  border:1px solid yellow;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:85%;
+  font-size:4.5vw;
+  flex-wrap:wrap;
+}
+.nav{
+ 
+  
+  width:100%;
+  
+height:100%;
+  
+}
+.navlinks{
+display:flex;
+
+justify-content: space-between;
+height:100%;
+width:40%;
+font-family: 'Bayon', sans-serif;
+list-style: none;
+
+
+
+}
+.links{
+  cursor:pointer;
+  text-decoration: none;
+  color:black;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+  .App {
+    text-align: center;
+    min-width:500px;
+   /* transform: scale(0.7);
+    transform-origin: 0 0;*/
+    
+  }
+  
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    /*background-color: #282c34;*/
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border:1px solid pink;
+    justify-content:center ;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    row-gap: 20px;
+    min-width:500px;
+    background-color: #708090;
+    
+  }
+  .top{
+  
+    min-height:5vh;
+    height:10vh;
+  
+    display:flex;
+    flex-direction:row;
+    min-width:100%;
+  justify-content: space-between;
+  
+  }
+  .navC{
+    display:flex;
+    flex-direction:row-reverse;
+  font-size:1.4vw;
+    height:4vh;
+    border:3px solid pink;
+    color:white;
+  }
+  .top-left{
+    flex:1;
+    border:2px solid red;
+    color:white;
+    background-color: #708090;
+    font-family: 'Bayon', sans-serif;
+    font-size:10vw;
+    color:white;
+    display:flex;
+  
+  }
+  .top-left-left{
+  flex:1;
+  display:flex;
+  justify-content: center;
+  border:1px solid red;
+  }
+  .top-left-right{
+    display:flex;
+  justify-content: center;
+  
+    flex:2;
+  }
+  .top-right{
+    flex:1;
+    border:2px solid yellow;
+    background-color: #708090;
+  }
+  .maintop{
+    
+   
+     height:100%;
+      display:flex;
+    flex-direction:row;
+  
+      min-width:100%;
+      border:3px solid green;
+      flex-direction:row;
+    justify-content: space-between;
+    
+    background-color: #708090;
+  }
+  
+  .clock{
+    width:auto;
+  }
+  .react-clock{
+    width:auto;
+  }
+  .footer{
+    min-height:5vh;
+    
+    color:black;
+  }
+  .main {
+    /*background-color: #282c34;*/
+    background-color:white;
+    min-height: 70vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    border:1px solid black;
+    justify-content:space-between ;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    row-gap: 20px;
+    background-color: #708090;
+  }
+  .row1{
+    display:flex;
+    min-height:10vh;
+    border:1px solid red;
+    width:100%;
+   
+    flex-direction:row;
+    justify-content:center;
+    background-color: #708090;
+    
+  }
+  .mrow{
+    min-height:100vh;
+    border:3px solid green;
+    width:99%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    row-gap:5vw;
+    
+  }
+  
+  .rectangles{
+  border:2px solid violet;
+  min-width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  height:auto;
+  padding-top:21px
+  }
+  .gbutton{
+    width:7vw;
+    justify-self:center;
+  }
+  .ginput{
+    width:30vw;
+  }
+  .imggoog{
+    width:15vw;
+  }
+  .row3{
+    order:-1;
+    min-height:10vh;
+    border:1px solid blue;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+   /* transform: scale(0.7);
+    transform-origin: 0 0;*/
+   
+    background-color: #708090;
+  
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  body{
+    min-width:500px;}
+  
+  .react-pricing-table{
+  border:1px solid green;
+   width:auto;
+   position:relative
+  }
+  .sidesC{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:inherit;
+    background-color: #708090;
+    width:100%;
+  row-gap:25vh;
+  border:2px solid green;
+  height:14vh;
+  }
+  .some{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:red;
+    justify-self:top;
+    height:14vh;
+    background-color: #708090;
+  }
+  .card{
+   width:100%;
+   justify-self: middle;
+    
+  }
+  .cardbody{
+    flex: 1 0 50%;
+    font-size:2.2vw;
+    display:flex;
+    flex-direction:row;
+    background-color: #708090;
+  }
+  .cardheader{
+    flex: 1 0 50%;
+    font-size:3vw;
+    background-color: #708090;
+    font-family: 'Bayon', sans-serif;
+    color:white;
+  }
+  .Grid{
+    width:auto;
+  
+  }
+  .Grid-cell{
+    width:auto;
+  }
+  .price basic-border{
+  min-width:auto;
+  }
+  .price{
+    min-width:auto;
+  }
+  .kingcontainer{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    height:100%;
+  }
+  .eachking{
+    width:8.5vw;
+    height:100%;
+    row-gap:1vw;
+   border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap:wrap ;
+    background-color: #708090;
+    
+   
+  }
+  .imgH{
+    background-color: #708090;
+   
+    
+  }
+  .kingimg{
+    width:8.5vw;
+    height:auto;
+    
+   
+  }
+  .logoimg{
+  width:12vw;
+  height:100%;
+  
+  }
+  
+  .imglogodiv{
+    border:1px solid yellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:85%;
+    font-size:6vw;
+    flex-wrap:wrap;
+  }
+  .nav{
+   
+    
+    width:100%;
+    
+  height:100%;
+    
+  }
+  .navlinks{
+  display:flex;
+  
+  justify-content: space-between;
+  height:100%;
+  width:40%;
+  font-family: 'Bayon', sans-serif;
+  list-style: none;
+  font-size:3vw;
+  
+  
+  }
+  
+
+  .links{
+    cursor:pointer;
+    text-decoration: none;
+    color:black;
+  }
 }

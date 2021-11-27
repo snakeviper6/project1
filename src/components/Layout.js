@@ -4,14 +4,21 @@ import Footer from './Footer.js'
 import Prices from './Prices.js'
 import Horaire from './Horaire.js'
 import Top from './Top.js'
+import Menu from './Menu.js'
+
+
 
 export default function Layout(props) {
     console.log(props);
     return (
+    
         <div className="App-header">
         <div className="top">
             <Top/>
             {/*<Myclock/>*/}
+        </div>
+        <div className="navC"> 
+        <Menu/>
         </div>
         <div className="main">
         <div className="row1">
@@ -27,5 +34,8 @@ export default function Layout(props) {
             <Footer/>
         </div>
       </div>
+     
+          
+            
     )
 }

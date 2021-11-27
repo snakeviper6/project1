@@ -7,7 +7,7 @@ export default class Prices extends Component {
         return (
             <div className="sidesC">
                 <div className="some">
-               <Card>
+               <Card className="card">
         <CardHeader className="cardheader">TARIF</CardHeader>
         <CardBody className="cardbody" >
             <p><b>30MIN</b><br /> 5DH </p><br />
