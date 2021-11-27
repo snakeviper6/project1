@@ -131,6 +131,7 @@ justify-content: center;
   
 }
 .mrow{
+  
   min-height:100vh;
   border:3px solid green;
   width:60%;
@@ -446,14 +447,14 @@ list-style: none;
     
   }
   .mrow{
-    min-height:100vh;
+    min-height:auto;
     border:3px solid green;
     width:99%;
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     row-gap:5vw;
-    
+    order:-1;
   }
   
   .rectangles{
@@ -476,7 +477,7 @@ list-style: none;
     width:15vw;
   }
   .row3{
-    order:-1;
+    
     min-height:10vh;
     border:1px solid blue;
     width:100%;
