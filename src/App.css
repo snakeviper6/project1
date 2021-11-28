@@ -437,7 +437,7 @@ list-style: none;
   }
   .row1{
     display:flex;
-    min-height:10vh;
+    min-height:20vh;
     border:1px solid red;
     width:100%;
    
@@ -478,7 +478,7 @@ list-style: none;
   }
   .row3{
     
-    min-height:10vh;
+    min-height:20vh;
     border:1px solid blue;
     width:100%;
     display:flex;
@@ -520,7 +520,7 @@ list-style: none;
     width:100%;
   row-gap:25vh;
   border:2px solid green;
-  height:14vh;
+  height:18vh;
   }
   .some{
     display:flex;
@@ -528,7 +528,7 @@ list-style: none;
     justify-content: center;
     color:red;
     justify-self:top;
-    height:14vh;
+    height:100%;
     background-color: #708090;
   }
   .card{
