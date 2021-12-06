@@ -46,7 +46,8 @@ justify-content: space-between;
 }
 .navC{
   display:flex;
-  flex-direction:row-reverse;
+  flex-direction:row;
+  justify-content:space-between;
 font-size:1.4vw;
   height:4vh;
   border:3px solid pink;
@@ -275,13 +276,34 @@ height:100%;
 }
 
 .imglogodiv{
+  border:3px solid orange;
+  display:flex;
+  flex-direction: column;
+justify-content: flex-start;
+  width:85%;
+  
+  flex-wrap:wrap;
+}
+.mainslogan{
   border:1px solid yellow;
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
-  width:85%;
+  justify-content: center;
+  width:100%;
+  height:75%;
   font-size:4.5vw;
   flex-wrap:wrap;
+}
+.slogan{
+font-size:1.3vw;
+width:100%;
+  height:19%;
+  border:2px solid green;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  
 }
 .nav{
  
@@ -296,13 +318,25 @@ display:flex;
 
 justify-content: space-between;
 height:100%;
-width:40%;
+width:50%;
 font-family: 'Bayon', sans-serif;
 list-style: none;
 
 
-
 }
+
+.navlinks2{
+  display:flex;
+  justify-content: space-between;
+  
+  height:100%;
+  width:40%;
+  font-family: 'Bayon', sans-serif;
+  list-style: none;
+  
+  
+  
+  }
 .links{
   cursor:pointer;
   text-decoration: none;
@@ -343,13 +377,14 @@ list-style: none;
     font-size: calc(10px + 2vmin);
     color: white;
     row-gap: 20px;
-    min-width:500px;
+    min-width:100%;
+    width:100%;
     background-color: #708090;
     
   }
   .top{
   
-    min-height:5vh;
+    min-height:92px;
     height:10vh;
   
     display:flex;
@@ -601,13 +636,35 @@ list-style: none;
   }
   
   .imglogodiv{
+    border:3px solid orange;
+    display:flex;
+    flex-direction: column;
+  justify-content: flex-start;
+    width:85%;
+    height:100%;
+    
+    flex-wrap:wrap;
+  }
+  .mainslogan{
     border:1px solid yellow;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    width:85%;
-    font-size:6vw;
+    justify-content: center;
+    width:100%;
+    height:70%;
+    font-size:5vw;
     flex-wrap:wrap;
+  }
+  .slogan{
+  font-size:2vw;
+  width:100%;
+    height:18%;
+    border:2px solid green;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    
   }
   .nav{
    
@@ -622,7 +679,7 @@ list-style: none;
   
   justify-content: space-between;
   height:100%;
-  width:40%;
+  width:70%;
   font-family: 'Bayon', sans-serif;
   list-style: none;
   font-size:3vw;

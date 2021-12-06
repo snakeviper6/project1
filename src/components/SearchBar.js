@@ -1,14 +1,31 @@
 import React from 'react';
 import { useState } from "react";
-
+import axios from 'axios';
 import goog from '../img/google.png'
 
 let textInput = React.createRef();
+const Hello=(x)=>{
+    axios.post('https://service.cyberbadr.com/sr', {
+        suj: x,
+        
+      })
+      .then(function (response) {
+        console.log(response);
+        
+        
+      
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
+
+ }
 const activateLasers= ()=>{
-
+     
     console.log('yes');
     console.log(textInput.current.value);
+    Hello(textInput.current.value);
     const link=`https://www.google.co.ma/search?client=firefox-b-d&q=${textInput.current.value}`;
     window.open(link, link);
 }

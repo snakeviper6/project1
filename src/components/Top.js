@@ -11,11 +11,14 @@ export default function Top() {
                 <div className="top-left-left">
                     <div className="imglogodiv">
                 <img className="logoimg" src={cyb} alt="Logo" /></div>
-            
+                 
             </div>
             <div className="top-left-right">
             <div className="imglogodiv">
-            CYBER BADR </div>
+            <div className="mainslogan">CYBER BADR</div>
+            <div className="slogan">À votre service depuis 2002</div>
+             </div>
+            
             </div>
             </div>
             <div className="top-right">
