@@ -13,36 +13,42 @@ export default class King extends Component {
  <div className="kingcontainer">
 
 <div className="eachking">
-            <Card>
+            {/*  <Card>
        
             <ImageHeader  className="imgH" imageSrc={m5} />
         
-    </Card>
+    </Card> */}
+    <img className="kingimg" src={m5} alt="Logo" />
     </div>
     <div className="eachking">
-            <Card>
+          {/*    <Card>
         <ImageHeader className="imgH"  imageSrc={h2} />
         
-    </Card>
+    </Card> */}
+    <img className="kingimg" src={h2} alt="Logo" />
     </div>
     <div className="eachking">
-            <Card>
+          {/*    <Card>
         <ImageHeader className="imgH" imageSrc={mar} />
         
-    </Card>
+    </Card> */}
+    <img className="kingimg" src={mar} alt="Logo" />
     </div>
     <div className="eachking">
-            <Card>
+            {/*  <Card>
         <ImageHeader  className="imgH" imageSrc={m6} />
         
-    </Card>
+    </Card> */}
+    <img className="kingimg" src={m6} alt="Logo" />
     </div>
     <div className="eachking">
-            <Card>
+            {/* <Card>
          <ImageHeader className="imgH"   imageSrc={hassan3} />
-      {/* <img className="kingimg" src={m5} alt="Logo" />*/}
+         </Card>
+         */}
         
-    </Card>
+      <img className="kingimg" src={hassan3} alt="Logo" />
+    
     </div>
 
 

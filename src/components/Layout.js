@@ -4,12 +4,14 @@ import Footer from './Footer.js'
 import Prices from './Prices.js'
 import Horaire from './Horaire.js'
 import Top from './Top.js'
-
+import 'bootstrap/dist/css/bootstrap.css'
+import { Nav, Navbar, NavDropdown ,NavItem } from 'react-bootstrap'
 import {GoogleLogin,GoogleLogout}  from 'react-google-login';
 
+import { LinkContainer } from 'react-router-bootstrap'
 import { useState } from 'react';
 
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
 
 
 export default function Layout(props) {
@@ -36,37 +38,87 @@ export default function Layout(props) {
       setshowLogoutButton(false);
       //console.log(response2);
       console.log("you are out");
-    props.changeIt("Visiteur");
+    props.changeIt("Identifiez-vous");
   }
-      
+  function overrideToggle() {
+   // console.log("TOGGLE TRIGGERED...")
+    setExpanded(prevExpanded => !prevExpanded)
+    //const width =window.innerWidth;
+    //alert(width);
+    console.log('something');
+}  
+function closeNav() {
+  // console.log("TOGGLE TRIGGERED...")
+  // setExpanded(false);
+  setExpanded(prevExpanded => !prevExpanded)
+   //const width =window.innerWidth;
+   //alert(width);
+   console.log('something');
+} 
+//onToggle={overrideToggle}
 const[showLoginButton,setshowLoginButton]=useState(true);
 const[showLogoutButton,setshowLogoutButton]=useState(false);
+const [expanded, setExpanded] = useState(false)
     return (
     
-        <div className="App-header">
-        <div className="top">
-            <Top/>
+        <div className="lay">
+      <div className="top">
+        <Top/>
             {/*<Myclock/>*/}
         </div>
         <div className="navC"> 
         
         <div className="navlinks">
+    
+        <Navbar id="navbar" className="navbar" bg="light"   expand="lg" collapseOnSelect   expanded={expanded} onToggle={overrideToggle} >
+       {/* <Navbar.Toggle className="coloring" aria-controls="basic-navbar-nav" />
+      
+            <Navbar.Collapse>
+            
+            </Navbar.Collapse>*/}
+            <Navbar.Toggle className="coloring" aria-controls="basic-navbar-nav"  />
+            <Navbar.Collapse>
+          <Nav id="navnav">
+{/*
 
 <Link   style={{ textDecoration: 'none' }} className="links" to="/">Acceuil</Link>
-
 <Link   style={{ textDecoration: 'none' }}  className="links" to="/services">Services</Link>
 <Link   style={{ textDecoration: 'none' }}  className="links" to="/impressions">Mes Impressions</Link>
 <Link   style={{ textDecoration: 'none' }}  className="links" to="/cv">Mon CV</Link>
 <Link   style={{ textDecoration: 'none' }}  className="links" to="/procedure">Procedures</Link>
-<Link  style={{ textDecoration: 'none' }} className="links" to="/about">A propos</Link>
+    <Link  style={{ textDecoration: 'none' }} className="links" to="/about">A propos</Link>*/}
+    
+  <LinkContainer to="/">
+<NavItem   style={{ textDecoration: 'none' }} className="links"  onClick={() => setExpanded(false)} >Acceuil</NavItem>
+</LinkContainer>
+<LinkContainer to="/services">
+<NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)} >Services</NavItem>
+</LinkContainer>
+<LinkContainer to="/impressions">
+<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >Impression</NavItem>
+</LinkContainer>
+<LinkContainer to="/cv">
+<NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)} >MON CV</NavItem>
+</LinkContainer>
+<LinkContainer to="/procedure">
+<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >PROCEDURES</NavItem>
+</LinkContainer>
+<LinkContainer to="/about">
+<NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)}>A PROPOS</NavItem>
+</LinkContainer>
 
+</Nav>
+</Navbar.Collapse>    
 
-
+      </Navbar>
 
 </div>
+
        <div className="navlinks2" >
-       {props.userNow}
+        {props.userNow} 
+      
        {showLoginButton?
+      
 <GoogleLogin
 clientId="744728563906-uuc7q553oj5uenh8svpvu0pfi874q23v.apps.googleusercontent.com"
 
@@ -90,8 +142,9 @@ isSignedIn={false}
 >
 </GoogleLogout> 
 :null}
+
        
-         </div>  
+         </div> 
         </div>
         <div className="main">
         <div className="row1">
@@ -100,8 +153,8 @@ isSignedIn={false}
         <div className="mrow">
            {props.children}
            
-           
-        </div>
+           </div>  
+
         <div className="row3">
            <Horaire/>
             </div></div>
@@ -109,7 +162,7 @@ isSignedIn={false}
             <Footer/>
         </div>
       </div>
-     
+        
           
             
     )

@@ -33,7 +33,7 @@ useEffect(() => {
 function App(props) {
   
 console.log('finally');
-const[userNow,setuserNow]=useState("Visiteur");  
+const[userNow,setuserNow]=useState("Identifiez-vous");  
 
 /*
 useEffect(() => {
@@ -85,12 +85,12 @@ useEffect(() => {
 
   return (
     <Router>
-    <div className="App">
+    <div className="App" id="App">
      
      <Layout  changeIt={userNow=>setuserNow(userNow)}
          userNow={userNow}>
       
-     <Switch>
+      <Switch>
      <Route exact path="/">
        <SearchBar/>
        

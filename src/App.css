@@ -1,11 +1,28 @@
-.App {
+/*.App {
   text-align: center;
   min-width:500px;
  /* transform: scale(0.7);
-  transform-origin: 0 0;*/
+  transform-origin: 0 0;
   
+}*/
+.sepspace{
+  display:block;
+  height:4vh;
 }
-
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border:1px solid pink;
+  justify-content:center ;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  row-gap: 20px;
+  
+  background-color: #708090;
+  text-align: center;
+  border:2px solid black;
+}
 
 .App-logo {
   height: 40vmin;
@@ -29,7 +46,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   row-gap: 20px;
-  min-width:500px;
+ 
   background-color: #708090;
   
 }
@@ -107,6 +124,28 @@ justify-content: center;
   
   color:black;
 }
+.fileIn{
+  width:20vw;
+  font-size: 1.4vw;
+}
+.selop{
+  width:30vw;
+  margin:0 auto;
+  font-size: 1.4vw;
+}
+.selnum{
+  width:20vw;
+  margin:0 auto;
+  font-size: 2vw;
+}
+.seldate{
+  width:30vw;
+  margin:0 auto;
+  font-size: 2vw;
+}
+.printLabel{
+  font-size:1.6vw;
+}
 .main {
   /*background-color: #282c34;*/
   background-color:white;
@@ -155,11 +194,15 @@ height:auto;
 padding-top:21px
 }
 .gbutton{
-  width:7vw;
+  width:14vw;
   justify-self:center;
+  font-size:1.4vw;
 }
 .ginput{
-  width:30vw;
+  width:69%;
+  height:4vh;
+  font-size: 1.2vw;
+  border-radius: 10px;
 }
 .imggoog{
   width:15vw;
@@ -190,8 +233,7 @@ padding-top:21px
   }
 }
 
-body{
-  min-width:500px;}
+
 
 .react-pricing-table{
 border:1px solid green;
@@ -315,46 +357,103 @@ height:100%;
 }
 .navlinks{
 display:flex;
-
+flex-direction:row;
 justify-content: space-between;
 height:100%;
-width:50%;
+width:68%;
 font-family: 'Bayon', sans-serif;
 list-style: none;
-
+background-color:white;
 
 }
 
 .navlinks2{
   display:flex;
-  justify-content: space-between;
+  flex-direction:row;
+  justify-content:space-between;
   
   height:100%;
-  width:40%;
+  width:33%;
   font-family: 'Bayon', sans-serif;
   list-style: none;
   
-  
+  background-color:black;
   
   }
 .links{
   cursor:pointer;
   text-decoration: none;
   color:black;
+  margin:1vw;
+}
+.coloring{
+  color:black;
+  background-color:black;
+}
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  background-color: #7eb444;
+  border:none;
+}
+.navbar-toggler .line{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.navbar-light {
+  border-color:black;
+
+  width:20vw;
+ 
+  position:absolute;
+  
+ }
+ .navbar-toggler-icon{
+   width:100px;
+   right:100;
+ }
+
+#navbar{
+  border:2px solid orange;
+  width:100%;
 }
 
-@media only screen and (max-width: 800px) {
 
+@media only screen and (max-width: 970px) {
 
-  .App {
+  .App{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    border:1px solid pink;
+    justify-content:center ;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    row-gap: 20px;
+  
+    background-color: #708090;
     text-align: center;
-    min-width:500px;
-   /* transform: scale(0.7);
-    transform-origin: 0 0;*/
-    
+    border:2px solid black;
   }
-  
-  
+  .navnav{
+    display:block;
+    background-color:black;
+  }
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: -5px; 
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
   .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -365,7 +464,7 @@ list-style: none;
       animation: App-logo-spin infinite 20s linear;
     }
   }
-  
+ 
   .App-header {
     /*background-color: #282c34;*/
    
@@ -384,18 +483,18 @@ list-style: none;
   }
   .top{
   
-    min-height:92px;
+    min-height:60px;
     height:10vh;
   
     display:flex;
-    flex-direction:row;
+    flex-flow:row;
     min-width:100%;
   justify-content: space-between;
   
   }
   .navC{
     display:flex;
-    flex-direction:row-reverse;
+    
   font-size:1.4vw;
     height:4vh;
     border:3px solid pink;
@@ -425,7 +524,7 @@ list-style: none;
     flex:2;
   }
   .top-right{
-    flex:1;
+    flex:1.2;
     border:2px solid yellow;
     background-color: #708090;
   }
@@ -434,7 +533,7 @@ list-style: none;
    
      height:100%;
       display:flex;
-    flex-direction:row;
+    flex-flow:row;
   
       min-width:100%;
       border:3px solid green;
@@ -461,7 +560,7 @@ list-style: none;
     min-height: 70vh;
    
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-items: flex-start;
     border:1px solid black;
     justify-content:space-between ;
@@ -476,7 +575,7 @@ list-style: none;
     border:1px solid red;
     width:100%;
    
-    flex-direction:row;
+    flex-flow:row;
     justify-content:center;
     background-color: #708090;
     
@@ -486,7 +585,7 @@ list-style: none;
     border:3px solid green;
     width:99%;
     display:flex;
-    flex-direction:column;
+    flex-flow:column;
     flex-wrap:wrap;
     row-gap:5vw;
     order:-1;
@@ -496,17 +595,21 @@ list-style: none;
   border:2px solid violet;
   min-width:100%;
   display:flex;
-  flex-direction:column;
+  flex-flow:column;
   justify-content:space-around;
   height:auto;
   padding-top:21px
   }
   .gbutton{
-    width:7vw;
+    width:20vw;
     justify-self:center;
+    font-size:3vw;
   }
   .ginput{
-    width:30vw;
+    width:55vw;
+    height:3vh;
+    font-size: 2.2vw;
+    border-radius: 10px;
   }
   .imggoog{
     width:15vw;
@@ -517,7 +620,7 @@ list-style: none;
     border:1px solid blue;
     width:100%;
     display:flex;
-    flex-direction:row;
+    flex-flow:row;
     justify-content:center;
    /* transform: scale(0.7);
     transform-origin: 0 0;*/
@@ -538,8 +641,7 @@ list-style: none;
     }
   }
   
-  body{
-    min-width:500px;}
+  
   
   .react-pricing-table{
   border:1px solid green;
@@ -548,7 +650,7 @@ list-style: none;
   }
   .sidesC{
     display:flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: space-between;
     width:inherit;
     background-color: #708090;
@@ -559,7 +661,7 @@ list-style: none;
   }
   .some{
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     color:red;
     justify-self:top;
@@ -575,7 +677,7 @@ list-style: none;
     flex: 1 0 50%;
     font-size:2.2vw;
     display:flex;
-    flex-direction:row;
+    flex-flow:row;
     background-color: #708090;
   }
   .cardheader{
@@ -600,18 +702,18 @@ list-style: none;
   }
   .kingcontainer{
     display:flex;
-    flex-direction:row;
+    flex-flow:row;
     flex-wrap:wrap;
     justify-content: space-around;
     height:100%;
   }
   .eachking{
     width:8.5vw;
-    height:100%;
+    height:8vh;
     row-gap:1vw;
    border:2px solid black;
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     flex-wrap:wrap ;
     background-color: #708090;
@@ -620,11 +722,11 @@ list-style: none;
   }
   .imgH{
     background-color: #708090;
-   
-    
+   height:auto;
+   width:100%;
   }
   .kingimg{
-    width:8.5vw;
+    width:100%;
     height:auto;
     
    
@@ -638,9 +740,9 @@ list-style: none;
   .imglogodiv{
     border:3px solid orange;
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
   justify-content: flex-start;
-    width:85%;
+    width:99%;
     height:100%;
     
     flex-wrap:wrap;
@@ -648,7 +750,7 @@ list-style: none;
   .mainslogan{
     border:1px solid yellow;
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     width:100%;
     height:70%;
@@ -661,7 +763,7 @@ list-style: none;
     height:18%;
     border:2px solid green;
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     font-family: 'Pacifico', cursive;
     
@@ -679,18 +781,78 @@ list-style: none;
   
   justify-content: space-between;
   height:100%;
-  width:70%;
+  width:20%;
   font-family: 'Bayon', sans-serif;
   list-style: none;
   font-size:3vw;
+  background-color:white;
   
   
   }
-  
+  .navlinks2{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-between;
+    
+    font-size:3vw;
+    height:100%;
+    width:80%;
+    font-family: 'Bayon', sans-serif;
+    list-style: none;
+    vertical-align: middle;
+    background-color:black;
+    
+    }
 
   .links{
     cursor:pointer;
     text-decoration: none;
     color:black;
+    margin: 5px;
+  }
+  .coloring{
+    color:white;
+    background-color:black;
+  }
+  .navbar-toggle-icon{
+    background-color:black;
+  }
+  .navbar-nav{
+display:relative;
+height:100%;
+width:80vw;
+border:2px solid red;
+position:fixed;
+z-index:1000;
+background-color:#708090;
+color:white;
+
+  }
+  .fileIn{
+    width:50vw;
+    font-size: 3.5vw;
+  }
+  .selop{
+    width:50vw;
+    margin:0 auto;
+    font-size: 3.5vw;
+  }
+  .selnum{
+    width:20vw;
+    margin:0 auto;
+    font-size: 4vw;
+  }
+  .seldate{
+    width:30vw;
+    margin:0 auto;
+    font-size: 4vw;
+  }
+  .printLabel{
+    font-size:3.5vw;
+  }
+  .sepspace{
+    display:block;
+    height:4vh;
   }
 }
+
