@@ -107,21 +107,22 @@ justify-content: space-between;
   }
   #navbar{
   
-    width:66%;
-    height: 5vh;
+    width:100%;
+    height: 6vh;
    
     background-color:#708090;
   }
 #navbarNav{
   background-color:#708090;
-  height: 5vh;
+  height: 6vh;
+  width:100%;
 }
 .navC{
   display:flex;
   flex-direction:row;
   justify-content:start;
 font-size:1.4vw;
-  height:5.2vh;
+  height:6.2vh;
   border-top:1px solid black;
   border-bottom:1px solid black;
   color:#282828;
@@ -864,6 +865,17 @@ background-color:#708090;
 color:white;
 font-size:5vw;
 
+  }
+  #navbarNav{
+    display:relative;
+height:100%;
+width:80vw;
+border:1px solid #342725;
+position:fixed;
+z-index:1000;
+background-color:#708090;
+color:white;
+font-size:5vw;
   }
   .fileIn{
     width:50vw;
