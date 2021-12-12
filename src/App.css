@@ -5,6 +5,7 @@
   transform-origin: 0 0;
   
 }*/
+
 .anotherApp{
   display:flex;
   flex-flow: column;
@@ -420,9 +421,7 @@ background-color:white;
   background-color:black;
 }
 .navbar-toggler{
-  width: 47px;
-  height: 34px;
-  background-color: #7eb444;
+  
   border:none;
 }
 .navbar-toggler .line{
