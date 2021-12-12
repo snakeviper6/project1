@@ -103,11 +103,14 @@ justify-content: space-between;
   .links:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
   }
-#navbar{
+  #navbar{
   
-  width:66%;
-  height: 4.8vh;
- 
+    width:66%;
+    height: 4.8vh;
+   
+    background-color:#708090;
+  }
+#navbarNav{
   background-color:#708090;
 }
 .navC{

@@ -80,7 +80,7 @@ const [expanded, setExpanded] = useState(false)
             </Navbar.Collapse>*/}
             <Navbar.Toggle className="coloring"  style={{border:'1px solid black'}}  />
             <Navbar.Collapse>
-          <Nav id="navnav">
+          <Nav id="navbarNav">
 {/*
 
 <Link   style={{ textDecoration: 'none' }} className="links" to="/">Acceuil</Link>
