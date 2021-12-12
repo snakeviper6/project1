@@ -1,10 +1,12 @@
 import React from 'react'
-import '../App.css'
+
 import Footer from './Footer.js'
 import Prices from './Prices.js'
 import Horaire from './Horaire.js'
 import Top from './Top.js'
+
 import 'bootstrap/dist/css/bootstrap.css'
+import '../App.css'
 import { Nav, Navbar, NavDropdown ,NavItem } from 'react-bootstrap'
 import {GoogleLogin,GoogleLogout}  from 'react-google-login';
 
@@ -70,13 +72,13 @@ const [expanded, setExpanded] = useState(false)
         
         <div className="navlinks">
     
-        <Navbar id="navbar" className="navbar" bg="light"   expand="lg" collapseOnSelect   expanded={expanded} onToggle={overrideToggle} >
+        <Navbar id="navbar" className="navbar"    expand="lg" collapseOnSelect   expanded={expanded} onToggle={overrideToggle} >
        {/* <Navbar.Toggle className="coloring" aria-controls="basic-navbar-nav" />
       
             <Navbar.Collapse>
             
             </Navbar.Collapse>*/}
-            <Navbar.Toggle className="coloring" aria-controls="basic-navbar-nav"  />
+            <Navbar.Toggle className="coloring"  style={{border:'1px solid black',backgroundColor:'',color:'white'}} aria-controls="basic-navbar-nav"  />
             <Navbar.Collapse>
           <Nav id="navnav">
 {/*
@@ -89,19 +91,19 @@ const [expanded, setExpanded] = useState(false)
     <Link  style={{ textDecoration: 'none' }} className="links" to="/about">A propos</Link>*/}
     
   <LinkContainer to="/">
-<NavItem   style={{ textDecoration: 'none' }} className="links"  onClick={() => setExpanded(false)} >Acceuil</NavItem>
+<NavItem   style={{ textDecoration: 'none' ,color:'white' }} className="links"  onClick={() => setExpanded(false)} >Acceuil</NavItem>
 </LinkContainer>
 <LinkContainer to="/services">
 <NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)} >Services</NavItem>
 </LinkContainer>
 <LinkContainer to="/impressions">
-<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >Impression</NavItem>
+<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >MES Impression</NavItem>
 </LinkContainer>
 <LinkContainer to="/cv">
 <NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)} >MON CV</NavItem>
 </LinkContainer>
 <LinkContainer to="/procedure">
-<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >PROCEDURES</NavItem>
+<NavItem   style={{ textDecoration: 'none' }}  className="links" onClick={() => setExpanded(false)} >PROCEDURES ADMINISTRATIVES</NavItem>
 </LinkContainer>
 <LinkContainer to="/about">
 <NavItem   style={{ textDecoration: 'none' }}  className="links"  onClick={() => setExpanded(false)}>A PROPOS</NavItem>
@@ -157,6 +159,7 @@ isSignedIn={false}
 
         <div className="row3">
            <Horaire/>
+           
             </div></div>
         <div className="footer">
             <Footer/>

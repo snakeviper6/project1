@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from "react";
 import axios from 'axios';
 import goog from '../img/google.png'
-
+import { Button } from "react-bootstrap";
 let textInput = React.createRef();
 const Hello=(x)=>{
+  if(x!==""){
     axios.post('https://service.cyberbadr.com/sr', {
         suj: x,
         
@@ -19,7 +20,7 @@ const Hello=(x)=>{
         console.log(error);
       });
 
-
+    }
  }
 const activateLasers= ()=>{
      
@@ -36,8 +37,10 @@ export default function SearchBar() {
            <div> <img className="imggoog" src={goog} alt="Logo" /></div>
  <div className="sep">
     <input className="ginput" ref={textInput} type="text" name="name"  placeholder="recherche google..." /> </div>
+    <div className="sepspace">    </div>
   <div className="sep">
-  <input className="gbutton" onClick={e => {e.preventDefault();activateLasers()}}type="submit" value="Recherche" />
+  {/*<input className="gbutton" type="submit" value="Recherche" />*/}
+  <Button variant="dark" onClick={e => {e.preventDefault();activateLasers()}}  className="gbutton">Recherche Google</Button>{' '}
 </div>
         </div>
     )
