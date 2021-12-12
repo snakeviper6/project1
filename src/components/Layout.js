@@ -5,7 +5,7 @@ import Prices from './Prices.js'
 import Horaire from './Horaire.js'
 import Top from './Top.js'
 
-import 'bootstrap/dist/css/bootstrap.css'
+
 import '../App.css'
 import { Nav, Navbar, NavDropdown ,NavItem } from 'react-bootstrap'
 import {GoogleLogin,GoogleLogout}  from 'react-google-login';
