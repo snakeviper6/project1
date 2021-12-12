@@ -76,6 +76,8 @@ justify-content: space-between;
   list-style: none;
   background-color:white;
   border-right:1px solid black;
+  background-color:#708090;
+  
   
   }
   
@@ -112,6 +114,7 @@ justify-content: space-between;
   }
 #navbarNav{
   background-color:#708090;
+  height: 5vh;
 }
 .navC{
   display:flex;
