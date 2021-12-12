@@ -115,11 +115,11 @@ justify-content: space-between;
   flex-direction:row;
   justify-content:start;
 font-size:1.4vw;
-  height:5vh;
+  height:5.2vh;
   border-top:1px solid black;
   border-bottom:1px solid black;
   color:#282828;
-  
+  background-color:#708090;
   font-weight:900;
   margin-top:4vh;
 }
