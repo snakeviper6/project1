@@ -412,21 +412,12 @@ background-color:white;
 .links:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
-.coloring{
-  color:black;
-  background-color:black;
-}
+
 .navbar-toggler{
   
   border:none;
 }
-.navbar-toggler .line{
-  width: 100%;
-  float: left;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 5px;
-}
+
 .navbar-light {
   border-color:black;
 
@@ -435,10 +426,7 @@ background-color:white;
   position:absolute;
   
  }
- .navbar-toggler-icon{
-   width:100px;
-   right:100;
- }
+
 
 #navbar{
   
