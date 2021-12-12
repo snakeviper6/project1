@@ -78,7 +78,7 @@ const [expanded, setExpanded] = useState(false)
             <Navbar.Collapse>
             
             </Navbar.Collapse>*/}
-            <Navbar.Toggle className="coloring"  style={{border:'1px solid black',backgroundColor:'',color:'white'}} aria-controls="basic-navbar-nav"  />
+            <Navbar.Toggle className="coloring"  style={{border:'1px solid black'}}  />
             <Navbar.Collapse>
           <Nav id="navnav">
 {/*

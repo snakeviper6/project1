@@ -73,9 +73,9 @@ justify-content: space-between;
 font-size:1.4vw;
   height:4vh;
   border-top:1px solid black;
-  
+  border-bottom:1px solid black;
   color:#282828;
-  background-color:black;
+  
   font-weight:900;
 }
 .top-left{
@@ -158,10 +158,10 @@ justify-content: center;
   /*background-color: #282c34;*/
   background-color:white;
   min-height: 70vh;
- 
+ margin-top:5vh;
   display: flex;
   flex-direction: row;
-  border:1px solid black;
+  
   justify-content:space-between ;
   font-size: calc(10px + 2vmin);
   color: black;
@@ -839,14 +839,7 @@ background-color:white;
     font-size:4vw;
     font-weight:10;
   }
-  .coloring{
-    color:white;
-    
-  }
-  .navbar-toggler-icon{
-    color:white;
-    
-  }
+ 
   .navbar-nav{
 display:relative;
 height:100%;
